@@ -6,20 +6,20 @@ sudo apt-get install gparted
 sudo gparted
 expand memory and save
 # Install dependencies
-make sure python3 is installed
-install dependencies below-
-sudo apt install python3-pip
-pip3 install opencv-python
-pip3 install imutils
-pip3 install matplotlib
-pip3 install torchvision
-pip3 install torch
-pip3 install boto3
-pip3 install pandas
-pip3 install urllib3
-sudo apt-get install pyqt5-dev-tools
-sudo apt-get install python3-lxml
-sudo apt install git
+.make sure python3 is installed
+.install dependencies below-
+.sudo apt install python3-pip
+.pip3 install opencv-python
+.pip3 install imutils
+.pip3 install matplotlib
+.pip3 install torchvision
+.pip3 install torch
+.pip3 install boto3
+.pip3 install pandas
+.pip3 install urllib3
+.sudo apt-get install pyqt5-dev-tools
+.sudo apt-get install python3-lxml
+.sudo apt install git
 # Clone jetson official github repository for training
 git clone https://github.com/mailrocketsystems/jetson-train.git
 create a video in .mp4 format that covers all the possible views of each objects you are going to train
