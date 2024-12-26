@@ -70,6 +70,8 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * give model_name
 * it will show results graph and it will give best check point
 * copy best check point and labels.txt file
+<img width="855" alt="Screenshot 2024-12-26 at 6 44 17 PM" src="https://github.com/user-attachments/assets/4ead11fe-1c54-4a1f-bb34-f6e796663b0b" />
+
 # Step-10: (Copy Files to Jetson Nano (Checkpoint, labels.txt))
 * Rest of project inside jetson nano
 * make sure you have jetson-inference folder in the device
