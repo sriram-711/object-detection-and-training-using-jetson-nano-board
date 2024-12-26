@@ -1,4 +1,4 @@
-# object detection and training using jetson-nano board
+# Object Detection And Training Using Jetson-Nano Board
 You have to do this process in your external Linux environment, other than jetson nano board
 # Step-1: (Expand memory if required)
 for that, ensure sufficient memory is available, if not increase memory using gparted tool
