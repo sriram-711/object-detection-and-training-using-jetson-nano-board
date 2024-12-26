@@ -5,6 +5,8 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * sudo apt-get install gparted
 * sudo gparted
 * expand memory and save
+<img width="833" alt="Screenshot 2024-12-26 at 6 33 43 PM" src="https://github.com/user-attachments/assets/f405ca18-4d00-427f-a517-5a9e0ac6b6e0" />
+
 # Step-2: (Install dependencies)
 * make sure python3 is installed
 * install dependencies below-
