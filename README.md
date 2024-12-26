@@ -52,7 +52,9 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * paste rectbox for each repeating image and draw new for new object
 * do it for all images and save each
 * Training custom objects on linux environment
+  
 <img width="828" alt="Screenshot 2024-12-26 at 6 38 19 PM" src="https://github.com/user-attachments/assets/6cdb747f-fe9c-4fb4-aa5f-5e0c7bf51a96" />
+
 # Step-6: (Create labels.txt List Object Names)
 * create labels.txt file inside jetson-train/data/model_name (gedit labels.txt)
 * list the name of objects you are going to train in the labels.txt file, one name in one line and top left alligned,and save.
