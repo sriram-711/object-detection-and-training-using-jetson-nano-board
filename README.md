@@ -74,6 +74,8 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 
 # Step-10: (Copy Files to Jetson Nano (Checkpoint, labels.txt))
 * Rest of project inside jetson nano
+* git clone --recursive https://github.com/dusty-nv/jetson-inference
+* after cloning follow external resorces(youtube) for buliding jetson-inference 
 * make sure you have jetson-inference folder in the device
 * create a folder with your mode_name in the directory jetson-inference/python/training/detection/ssd/models/
 * paste the copied check point and labels.txt file
