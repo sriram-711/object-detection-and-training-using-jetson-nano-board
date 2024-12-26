@@ -1,11 +1,11 @@
 # object detection and training using jetson-nano board
 You have to do this process in your external Linux environment, other than jetson nano board
-#Expand memory if required
+# Step-1 (Expand memory if required)
 for that, ensure sufficient memory is available, if not increase memory using gparted tool
 * sudo apt-get install gparted
 * sudo gparted
 * expand memory and save
-# Install dependencies
+# Step-2 (Install dependencies)
 * make sure python3 is installed
 * install dependencies below-
 * sudo apt install python3-pip
@@ -20,8 +20,9 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * sudo apt-get install pyqt5-dev-tools
 * sudo apt-get install python3-lxml
 * sudo apt install git
-# Clone jetson official github repository for training
+# Step-3 (Clone jetson official github repository for training)
 * git clone https://github.com/mailrocketsystems/jetson-train.git
+# Step-4 (Prepare Dataset (Convert Video to Frames)
 * create a video in .mp4 format that covers all the possible views of each objects you are going to train
 * place the video inside jetson-train/videos in mp4 format
 * now we have to convert the video file to frame by frame images using prepare_dataset.py python file
@@ -36,6 +37,7 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * Annotating using Label image tool
 * now we have to give the annotation to each image we've captured
 * for that, we need to clone and use labelimg tool in home
+# Step-5 (Annotate Frames Using LabelImg Tool)
 * git clone https://github.com/HumanSigal/labelImg.git
 * cd labelImg/
 * make qt5py3
@@ -49,21 +51,27 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * paste rectbox for each repeating image and draw new for new object
 * do it for all images and save each
 * Training custom objects on linux environment
+# Step-6 (Create labels.txt List Object Names)
 * create labels.txt file inside jetson-train/data/model_name (gedit labels.txt)
 * list the name of objects you are going to train in the labels.txt file, one name in one line and top left alligned,and save.
+# Step-7 (Train Model Run train_ssd.py)
 * open a new terminal at jetson-train
 * python3 train_ssd.py --dataset-type=voc --data=data/model_name/ --model-dir=models/model_name --batch-size=2 --workers=2 --epochs=300
 * close all other applications on the system
 * it will take some time
+# Step-8 (Evaluate Model Run result.py)
 * open terminal at jetson-train
+# Step-9 (Copy Best Checkpoint and labels.txt)
 * python3 result.py
 * give model_name
 * it will show results graph and it will give best check point
 * copy best check point and labels.txt file
+# Step-10 (Copy Files to Jetson Nano (Checkpoint, labels.txt))
 * Rest of project inside jetson nano
 * make sure you have jetson-inference folder in the device
 * create a folder with your mode_name in the directory jetson-inference/python/training/detection/ssd/models/
 * paste the copied check point and labels.txt file
+# Step-11 (Convert PyTorch Model to ONNX (Run onnx_export.py)
 * now you'll need to convert your PyTorch model to ONNX
 * cd jetson-inference
 * docker/run.sh
@@ -71,7 +79,10 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * open anew terminal inside jetson-inference/python/training/detection/ssd/
 * python3 onnx_export.py --model-dir=models/model_name
 * The converted model will then be saved under model_name/ssd-mobilenet.onnx, which you can then load with the detectnet programs
+# Step-12 (Run Object Detection on Jetson Nano (Run detectnet))
 * make sure you are in root jetson-inference/python/training/detection/ssd
 * detectnet --model=models/model_name/ssd-mobilenet.onnx --labels=models/model_name/labels.txt --input-blob=input_0 --output-cvg=scores --output-bbox=boxes /dev/video0
+# Step-13 (Detection Results (Output: Bounding Boxes))
 * the above command will start the detection procedures
-that's all ,jetson will detect you custom objects.
+* that's all ,jetson will detect you custom objects.
+# Step-14 (
