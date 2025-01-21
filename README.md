@@ -7,20 +7,21 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * sudo gparted
 * expand memory and save
 # Step-2: (Install dependencies)
-* make sure python3 is installed
-* install dependencies below-
-* sudo apt install python3-pip
-* pip3 install opencv-python
-* pip3 install imutils
-* pip3 install matplotlib
-* pip3 install torchvision
-* pip3 install torch
-* pip3 install boto3
-* pip3 install pandas
-* pip3 install urllib3
-* sudo apt-get install pyqt5-dev-tools
-* sudo apt-get install python3-lxml
-* sudo apt install git
+* make sure python3 (version == 3.6.9)is installed
+* install dependencies below
+* sudo apt install python3-pip (version == 21.3.1)
+* pip3 install opencv-python (version == 4.6.0.66)
+* pip3 install imutils (version == 0.5.4)
+* pip3 install matplotlib(version == 2.1.1)
+* pip3 install torchvision(version == 0.9.0)
+* pip3 install torch (version == 1.8.0)
+* pip3 install boto3 (version == 1.23.10)
+* pip3 install pandas (version == 0.22.0)
+* pip3 install urllib3 (version == 1.26.20)
+* sudo apt-get install pyqt5-dev-tools (version == 5.10.1+dfsg-1ubuntu2)
+* sudo apt-get install python3-lxml (version == 4.2.1-1ubuntu0.6)
+* sudo apt install git (version == 2.17.1)
+* if you want to install any other dependencies a part from this checkout the Dependencies.txt file  
 # Step-3: (Clone jetson official github repository for training)
 * git clone https://github.com/mailrocketsystems/jetson-train.git
 # Step-4: (Prepare Dataset (Convert Video to Frames)
