@@ -67,6 +67,8 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * open a new terminal at jetson-train
 * python3 train_ssd.py --dataset-type=voc --data=data/model_name/ --model-dir=models/model_name --batch-size=2 --workers=2 --epochs=300
 * close all other applications on the system
+<img width="858" alt="Screenshot 2025-03-31 at 12 40 54 PM" src="https://github.com/user-attachments/assets/33810ace-712e-4388-bed7-059661255a8e" />
+
 * it will take some time
 # Step-8: (Evaluate Model Run result.py)
 * open terminal at jetson-train
@@ -74,6 +76,8 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * python3 result.py
 * give model_name
 * it will show results graph and it will give best check point
+![graph](https://github.com/user-attachments/assets/42bb25db-c874-4c43-ade3-5586a44fe33c)
+
 * copy best check point and labels.txt file
 <img width="855" alt="Screenshot 2024-12-26 at 6 44 17 PM" src="https://github.com/user-attachments/assets/4ead11fe-1c54-4a1f-bb34-f6e796663b0b" />
 
