@@ -1,4 +1,6 @@
 # Object Detection And Training Using Jetson-Nano Board
+![Picture](https://github.com/user-attachments/assets/bb643914-8b9f-43bd-960d-1e1de5888989)
+
 You have to do this process in your external Linux environment, other than jetson nano board
 <img width="833" alt="Screenshot 2024-12-26 at 6 33 43 PM" src="https://github.com/user-attachments/assets/f405ca18-4d00-427f-a517-5a9e0ac6b6e0" />
 # Step-1: (Expand memory if required)
