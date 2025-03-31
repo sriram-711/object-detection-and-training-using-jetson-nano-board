@@ -54,6 +54,8 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * click create rect box and draw boundary to the object, give name to object and click save
 * paste rectbox for each repeating image and draw new for new object
 * do it for all images and save each
+ ![Picture](https://github.com/user-attachments/assets/94b6de74-d75c-489b-a877-8949f56e7762)
+
 * Training custom objects on linux environment
   
 <img width="828" alt="Screenshot 2024-12-26 at 6 38 19 PM" src="https://github.com/user-attachments/assets/6cdb747f-fe9c-4fb4-aa5f-5e0c7bf51a96" />
@@ -96,6 +98,8 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 # Step-13: (Detection Results (Output: Bounding Boxes))
 * the above command will start the detection procedures
 * that's all ,jetson will detect you custom objects.
+![Picture](https://github.com/user-attachments/assets/89a2c339-2260-44b7-b346-f748c7c2d89f)
+
 # Step-14: (Optional) Object Detection and Distance Calculation Using Bounding Boxes
 * In addition to detecting objects, you can calculate the distance of detected objects based on the bounding box dimensions. For instance, if you know the real-world height of the object, you can estimate 
   the distance using the following formula
