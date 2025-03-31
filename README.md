@@ -104,6 +104,7 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * that's all ,jetson will detect you custom objects.
 ![Picture](https://github.com/user-attachments/assets/89a2c339-2260-44b7-b346-f748c7c2d89f)
 
+
 # Step-14: (Optional) Object Detection and Distance Calculation Using Bounding Boxes
 * In addition to detecting objects, you can calculate the distance of detected objects based on the bounding box dimensions. For instance, if you know the real-world height of the object, you can estimate 
   the distance using the following formula
@@ -111,4 +112,6 @@ for that, ensure sufficient memory is available, if not increase memory using gp
 * KNOWN_HEIGHT is the real-world height of the object in cm (e.g., the height of a car).
 * FOCAL_LENGTH is the focal length of your camera (calibrate it for accurate results).
 * pixel_height is the height of the bounding box in pixels.
+![WhatsApp Image 2025-03-31 at 12 36 12 PM](https://github.com/user-attachments/assets/47e75cad-bf80-48c1-8e6b-b050139277fa)
+
 
